@@ -10,7 +10,6 @@ export PATH="/usr/local/opt/apr-util/bin:$PATH"
 export PATH="/usr/local/opt/unzip/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH=$BRAZIL_CLI_BIN:$PATH
 
 export MANPATH=":/usr/local/man:$MANPATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
@@ -18,7 +17,7 @@ export MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/chrluc/.oh-my-zsh
+export ZSH=/Users/cwlucas41/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -75,23 +74,3 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 alias ls="ls --color=auto"
-alias cloud="ssh chrluc.aka.corp.amazon.com -t '/apollo/env/envImprovement/bin/tmux attach-session -t 0 || /apollo/env/envImprovement/bin/tmux new-session -s 0'"
-alias cloud-without-tmux="ssh chrluc.aka.corp.amazon.com"
-
-alias unison="unison -ui text cloud_desktop"
-
-alias bb=brazil-build
-alias bbs='bb server'
-alias bba='brazil-build apollo-pkg'
-alias bre='brazil-runtime-exec'
-alias brc='brazil-recursive-cmd'
-alias brc=brazil-recursive-cmd
-alias bbr='brc brazil-build'
-alias bball='brc --allPackages'
-alias bbb='brc --allPackages brazil-build'
-alias bbra='bbr apollo-pkg'
-alias caba='echo "$(tput bold)$(tput setaf 5)CLEANING PACKAGES...$(tput sgr0)"; brazil-recursive-cmd --reverse "brazil-build clean"; echo "$(tput bold)$(tput setaf 12)BUILDING PACKAGES...$(tput sgr0)"; brazil-recursive-cmd "brazil-build build"'
-alias sc='echo "$(tput bold)$(tput setaf 9)SYNCING CODE...$(tput sgr0)"; brazil ws --sync -md; brazil-recursive-cmd "git pull --ff-only"'
-alias go='sc; caba'
-
-~/Documents/dailySSH.sh
