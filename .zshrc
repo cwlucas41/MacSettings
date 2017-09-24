@@ -1,5 +1,20 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$BRAZIL_CLI_BIN:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:$HOME/bin:$PATH
+export PATH=":/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/file-formula/bin:$PATH"
+export PATH="/usr/local/opt/perl@5.18/bin:$PATH"
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
+export PATH="/usr/local/opt/apr/bin:$PATH"
+export PATH="/usr/local/opt/apr-util/bin:$PATH"
+export PATH="/usr/local/opt/unzip/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH=$BRAZIL_CLI_BIN:$PATH
+
+export MANPATH=":/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Path to your oh-my-zsh installation.
