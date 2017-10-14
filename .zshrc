@@ -70,7 +70,3 @@ plugins=(git)
 plugins=(vi-mode)
 
 source $ZSH/oh-my-zsh.sh
-
-export EDITOR='vim'
-
-alias ls="ls --color=auto"
