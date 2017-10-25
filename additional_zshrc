@@ -3,6 +3,7 @@ export EDITOR='vim'
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias tmux="tmux -f ~/workplace/MacSettings/.tmux.conf"
+alias cdw="cd ~/workplace"
 
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
