@@ -5,6 +5,9 @@ alias grep="grep --color=auto"
 alias tmux="tmux -f ~/workplace/MacSettings/.tmux.conf"
 alias cdw="cd ~/workplace"
 
+set encoding=utf-8
+set fileencoding=utf-8
+
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
     LESS_TERMCAP_me=$'\e[0m' \
