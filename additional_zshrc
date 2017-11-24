@@ -6,6 +6,7 @@ alias tmux="tmux -f ~/workplace/MacSettings/.tmux.conf"
 alias cdw="cd ~/workplace"
 
 alias so='source ~/.zshrc'
+alias vso='vim ~/.zshrc'
 
 set encoding=utf-8
 set fileencoding=utf-8
